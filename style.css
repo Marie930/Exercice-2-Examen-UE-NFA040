@@ -1,3 +1,104 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  margin-bottom: auto;
+  margin: 10px;
+}
+
 header {
   background-color: lightgrey;
+  height: 150px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
+
+h2.nouv {
+  margin-left: 8px;
+}
+
+p.header {
+  color: white;
+  width: 1678px;
+  justify-content: center;
+  display: flex;
+}
+
+p.new {
+  margin-left: 8px;
+  width: 300px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+main {
+  display: flex;
+}
+
+.entree {
+  border: solid 2px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.entree.selectionnee {
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.corps {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+img {
+  width: 200px;
+  grid-area: image;
+}
+
+.produit {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  grid-template-rows: 20% 50% 15% 15%;
+  width: 250px;
+  align-items: center;
+  margin-top: 30px;
+  grid-template-areas:
+      "titre"
+      "image"
+      "texte"
+      "bouton";
+}
+
+.produit h2 {
+  grid-area: titre;
+}
+
+aside {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  border-left: solid;
+}
+
+p {
+  grid-area: texte;
+}
+
+button {
+  grid-area: bouton;
 }
